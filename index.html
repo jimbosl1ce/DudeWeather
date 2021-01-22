@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css">
+  <title>Dude Dashboard</title>
+</head>
+<body>
+  <h1>Dude Dashboard</h1>
+
+  <div class="container">
+    <p>Dude, look at the weather.</p>
+    <table class="u-full-width">
+      <thead>
+        <tr>
+          <th>Location</th>
+          <th>Hi / Lo</th>
+          <th>Current</th>
+          <th>Forecast</th>
+          <th>Humidity</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Cody</td>
+          <td><span id="codyhigh"></span> / <span id="codylow"></span></td>
+          <td><span id="codycurrent"></span></td>
+          <td><span id="codyforecast"></span></td>
+          <td><span id="codyhumidity"></span></td>
+        </tr>
+        <tr>
+          <td>Trey</td>
+          <td><span id="treyhigh"></span> / <span id="treylow"></span></td>
+          <td><span id="treycurrent"></span></td>
+          <td><span id="treyforecast"></span></td>
+          <td><span id="treyhumidity"></span></td>
+        </tr>
+        <tr>
+          <td>Jimmy</td>
+          <td><span id="jimmyhigh"></span> / <span id="jimmylow"></span></td>
+          <td><span id="jimmycurrent"></span></td>
+          <td><span id="jimmyforecast"></span></td>
+          <td><span id="jimmyhumidity"></span></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="container">
+    <p id="output"></p>
+  </div>
+
+  <script src="weather.js"></script>
+</body>
+</html>
