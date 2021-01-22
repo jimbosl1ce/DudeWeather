@@ -4,7 +4,7 @@ let jimWeather;
 fetch('https://api.openweathermap.org/data/2.5/weather?zip=94117,us&appid=e4381083a8cbc275c2fc3982bcc0ecc5&units=imperial')
   .then(res => res.json())
   .then(data => jimWeather = data)
-  .then(() => console.log(jimWeather))
+  //.then(() => console.log(jimWeather))
   .then(() => {
     let currenttemp = jimWeather.main.temp;
     let hightemp = jimWeather.main.temp_max;
@@ -22,7 +22,7 @@ fetch('https://api.openweathermap.org/data/2.5/weather?zip=94117,us&appid=e43810
 fetch('https://api.openweathermap.org/data/2.5/weather?zip=11215,us&appid=e4381083a8cbc275c2fc3982bcc0ecc5&units=imperial')
   .then(res => res.json())
   .then(data => jimWeather = data)
-  .then(() => console.log(jimWeather))
+  //.then(() => console.log(jimWeather))
   .then(() => {
     let currenttemp = jimWeather.main.temp;
     let hightemp = jimWeather.main.temp_max;
@@ -40,7 +40,7 @@ fetch('https://api.openweathermap.org/data/2.5/weather?zip=11215,us&appid=e43810
 fetch('https://api.openweathermap.org/data/2.5/weather?zip=94010,us&appid=e4381083a8cbc275c2fc3982bcc0ecc5&units=imperial')
   .then(res => res.json())
   .then(data => jimWeather = data)
-  .then(() => console.log(jimWeather))
+  //.then(() => console.log(jimWeather))
   .then(() => {
     let currenttemp = jimWeather.main.temp;
     let hightemp = jimWeather.main.temp_max;
@@ -53,3 +53,14 @@ fetch('https://api.openweathermap.org/data/2.5/weather?zip=94010,us&appid=e43810
     document.getElementById('codyforecast').innerHTML = forecast;
     document.getElementById('codyhumidity').innerHTML = humidity + "%";
   });
+
+let kanye;
+
+  //Kanye quote fetcher
+fetch('https://api.kanye.rest')
+  .then(res => res.json())
+  .then(data => kanye = data)
+  .then(() => console.log(kanye))
+  .then(() => {
+  document.getElementById('quote').innerHTML = kanye.quote;
+  })
